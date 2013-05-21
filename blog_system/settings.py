@@ -111,7 +111,7 @@ ROOT_URLCONF = 'blog_system.urls'
 WSGI_APPLICATION = 'blog_system.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_DIR, "templates"),
+    os.path.join(PROJECT_DIR, "templates").replace('\\', '/'),
 )
 
 INSTALLED_APPS = (
