@@ -1,6 +1,7 @@
 django
 django-file_picker
 django-bootstrap-toolkit
+PIL
 psycopg2
 gunicorn
 dj-database-url
