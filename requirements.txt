@@ -1,0 +1,3 @@
+django
+django-file_picker
+django-bootstrap-toolkit
