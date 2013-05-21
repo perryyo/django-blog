@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero-unit">
+    <h1>My Posts</h1>
+    <p>The best damn blog in the whole wise world</p>
+    <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>
+</div>
+
+{% for blog in blogs %}
+    
+    <h2>{{ blog }} <small>{{ blog.time }}</small></h2>
+    {{ blog.perex|safe }}
+    <a class="btn" href="{{ blog.get_absolute_url }}">Read more</a>
+{% endfor %}
+
+{% endblock %}
