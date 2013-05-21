@@ -108,7 +108,8 @@ ROOT_URLCONF = 'blog_system.urls'
 WSGI_APPLICATION = 'blog_system.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/james/Code/Python/blog_system/templates'
+    os.path.join(os.path.dirname(__file__) ,
+   '../templates').replace('\\','/')
 )
 
 INSTALLED_APPS = (
