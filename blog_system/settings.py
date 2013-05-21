@@ -1,3 +1,6 @@
+import os.path
+PROJECT_DIR = os.path.dirname(__file__)
+
 # Django settings for blog_system project.
 
 DEBUG = True
@@ -108,8 +111,7 @@ ROOT_URLCONF = 'blog_system.urls'
 WSGI_APPLICATION = 'blog_system.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__) ,
-   '../templates').replace('\\','/')
+    os.path.join(PROJECT_DIR, "templates"),
 )
 
 INSTALLED_APPS = (
